@@ -1,0 +1,14 @@
+pipeline:
+  name: "yottaflex-sla-freshness-monitor"
+  version: "1.0.0"
+  default_seed: 42
+
+storage:
+  database_path: "data/sla_monitor.duckdb"
+  sample_dir: "data/sample"
+  generated_dir: "data/generated"
+  reports_dir: "data/reports"
+
+sla_rules:
+  default_freshness_threshold_minutes: 1440
+  default_evaluation_anchor_utc: "2026-11-12T12:00:00Z"

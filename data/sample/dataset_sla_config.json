@@ -1,0 +1,57 @@
+[
+  {
+    "dataset_id": "ds_orders_core",
+    "dataset_name": "Core E-Commerce Orders",
+    "owner_team": "commerce-data",
+    "expected_arrival_hour_utc": 6,
+    "expected_arrival_minute_utc": 0,
+    "sla_window_minutes": 30,
+    "max_freshness_minutes": 360,
+    "criticality": "HIGH",
+    "is_active": true
+  },
+  {
+    "dataset_id": "ds_payments_ledger",
+    "dataset_name": "Payments Settlement Ledger",
+    "owner_team": "finops-eng",
+    "expected_arrival_hour_utc": 7,
+    "expected_arrival_minute_utc": 0,
+    "sla_window_minutes": 45,
+    "max_freshness_minutes": 480,
+    "criticality": "HIGH",
+    "is_active": true
+  },
+  {
+    "dataset_id": "ds_clickstream_agg",
+    "dataset_name": "Hourly Clickstream Rollup",
+    "owner_team": "growth-analytics",
+    "expected_arrival_hour_utc": 8,
+    "expected_arrival_minute_utc": 30,
+    "sla_window_minutes": 60,
+    "max_freshness_minutes": 720,
+    "criticality": "MEDIUM",
+    "is_active": true
+  },
+  {
+    "dataset_id": "ds_inventory_snap",
+    "dataset_name": "Warehouse Inventory Snapshot",
+    "owner_team": "supply-chain",
+    "expected_arrival_hour_utc": 5,
+    "expected_arrival_minute_utc": 0,
+    "sla_window_minutes": 30,
+    "max_freshness_minutes": 1440,
+    "criticality": "MEDIUM",
+    "is_active": true
+  },
+  {
+    "dataset_id": "ds_marketing_spend",
+    "dataset_name": "Daily Ad Spend Attribution",
+    "owner_team": "marketing-ops",
+    "expected_arrival_hour_utc": 9,
+    "expected_arrival_minute_utc": 0,
+    "sla_window_minutes": 120,
+    "max_freshness_minutes": 1440,
+    "criticality": "LOW",
+    "is_active": true
+  }
+]

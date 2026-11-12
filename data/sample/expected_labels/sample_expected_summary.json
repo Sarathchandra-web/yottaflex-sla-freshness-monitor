@@ -1,0 +1,21 @@
+{
+  "evaluation_anchor_utc": "2026-11-12T12:00:00Z",
+  "batch_date": "2026-11-12",
+  "reconciliation": {
+    "records_read": 13,
+    "records_valid": 8,
+    "records_rejected": 5
+  },
+  "expected_dataset_statuses": {
+    "ds_orders_core": "ON_TIME",
+    "ds_payments_ledger": "LATE",
+    "ds_clickstream_agg": "ON_TIME",
+    "ds_inventory_snap": "FAILED",
+    "ds_marketing_spend": "MISSING"
+  },
+  "expected_alert_types": [
+    "SLA_BREACH",
+    "LOAD_FAILED",
+    "MISSING_LOAD"
+  ]
+}
